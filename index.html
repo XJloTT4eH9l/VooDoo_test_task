@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/footer-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VooDoo Test Task</title>
+  </head>
+
+  <body>
+      <header class="py-[24px] border-b-2 border-black md:py-[48px]"> 
+        <div class="max-w-[1320px] px-[24px] mx-auto flex justify-between items-center md:items-start">
+          <a class="relative left-[0] 2xl:left-[-56px]" href="#">
+            <img class="w-[135px] h-[50px] md:w-[250px] md:h-[98px]" src="./img/logo.png" alt="VooDoo" />
+          </a>
+          <div class="flex items-center">
+            <button id="cart" class="mr-[16px] md:mr-[48px]">
+                <img src="./img/cart.png" alt="cart" />
+            </button>
+            <a href="#" class="p-[12px] text-white font-bold bg-black text-[14px] rounded leading-none transition-colors hover:bg-transparent hover:text-black border border-black md:text-[20px]">Sign-up</a>
+          </div>
+        </div>
+      </header>
+
+      <div 
+        id="cartDrawer" 
+        class="flex flex-col fixed w-full h-full right-[-100%] top-0 p-[45px] bg-black text-white z-10 transition-all overflow-y-auto custom-sm:w-[455px]"
+      >
+        <div class="flex justify-between items-center pb-[20px] border-b-[1px] mb-[50px]">
+          <h2 class="text-white font-bold text-2xl">Shopping cart</h2>
+          <img id="cartClose" class="w-[24px] h-[24px] cursor-pointer" src="./img/close-line.png" alt="close"/>
+        </div>
+
+        <ul id="cartList" class="flex-grow">
+        
+        </ul>
+
+        <div class="flex justify-between items-center pt-[35px] border-t-[1px]">
+          <p class="uppercase font-bold">Total</p>
+          <p id="summ" class="uppercase font-bold">5000 KR.</p>
+        </div>
+      </div>
+
+      <div class="max-w-[1320px] px-[24px] mx-auto">
+        <div class="accordion mt-[24px] p-[24px] bg-black rounded flex justify-between cursor-pointer md:mt-[100px]">
+          <div class="flex text-white items-center">
+            <img class="w-[24px] h-[24px] mr-[6px]" src="./img/important.png" alt="imortant"/>
+            <h2 class=" text-base uppercase font-bold mr-[24px] sm:mr-[48px]">ALPHA</h2>
+            <p class="accordion-title font-medium truncate max-w-[246px] overflow-hidden">Important info regarding our service</p>
+          </div>
+          <img src="./img/arrow.png" class="arrow w-[24px] h-[24px] transition-all" alt="arrow" />
+        </div>
+        <div class="p-[24px] pt-0 pb-0 mt-[-5px] mb-[48px] bg-black text-white rounded max-h-0 overflow-hidden transition-all">
+          <p class="py-[10px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+
+      <section class="max-w-[1320px] px-[24px] mx-auto product-list flex flex-wrap justify-center gap-x-[24px] gap-y-[48px] pb-[70px] lg:justify-between">
+        
+      </section>
+
+      <div class="pagination max-w-[1320px] px-[24px] mx-auto mb-[196px]">
+        <ul class="pagination flex justify-center"></ul>
+      </div>
+
+      <footer class="py-[48px] border-t-2 border-black bg-white font-bold sm:py-[84px]">
+        <div class="max-w-[1320px] px-[24px] mx-auto flex flex-col gap-[48px] justify-between md:flex-row md:px-[15px] md:gap-[23px]">
+          <div class="w-[300px] flex justify-center items-center mx-0 hidden md:block">
+            <img class="w-[82px] h-[82px] mx-auto" src="./img/footer-logo.png" alt="voodoo-logo" />
+          </div>
+          <ul class="w-[300px]">
+            <li class="mb-[19px]"><a href="#">FAQ</a></li>
+            <li class="mb-[19px]"><a href="#">RETURNS</a></li>
+            <li><a href="#">CONTACT </a></li>
+          </ul>
+          <ul class="w-[300px]">
+            <li class="mb-[19px]"><a href="#">TERMS & CONDITIONS</a></li>
+            <li class="mb-[19px]"><a href="#">PRIVACY POLICY</a></li>
+            <li class="mb-[19px]"><a href="#">COOKIE POLICY</a></li>
+            <li><a href="#">COOKIE SETTINGS</a></li>
+          </ul>
+          <ul class="w-[300px]">
+            <li class="mb-[19px]"><a href="#">ABOUT SECOND CHANCE</a></li>
+            <li class="mb-[19px]"><a href="#">CAREER</a></li>
+            <li class="mb-[19px]"><a href="#">FACEBOOK</a></li>
+            <li><a href="#">INSTAGRAM</a></li>
+          </ul>
+          <div class="w-full flex justify-center items-center mx-0 block md:hidden">
+            <img class="w-[82px] h-[82px] mx-0" src="./img/footer-logo.png" alt="voodoo-logo" />
+          </div>
+        </div>
+      </footer>
+    <script type="module" src="/main.js"></script>
+    <script src="/api.js"></script>
+  </body>
+</html>
