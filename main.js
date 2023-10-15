@@ -7,6 +7,7 @@ const cartDrawer = document.getElementById('cartDrawer');
 const cartCloseBtn = document.getElementById('cartClose');
 const cartList = document.getElementById('cartList');
 const summ = document.getElementById('summ');
+const productList = document.querySelector('.product-list');
 
 let cartItems = [];
 const screenWidth = window.innerWidth;
