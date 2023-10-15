@@ -183,7 +183,7 @@
         productList.innerHTML = '';
         productsFromApi.forEach(product => {
             const productElement = document.createElement('div');
-            productElement.className = 'card w-[300px]';
+            productElement.className = 'card w-[100%] extra-sm:w-[300px]';
         
             productElement.innerHTML = `
                 <div class="relative w-full h-[300px] border-2 border-black rounded flex justify-center mb-[12px]" alt="product">
